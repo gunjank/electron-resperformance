@@ -3,6 +3,7 @@ var benchrest = require('bench-rest');
 
 
 
+
 // var flow = {
 //     before: [],      // operations to do before anything
 //     beforeMain: [],  // operations to do before each iteration

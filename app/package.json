@@ -1,6 +1,6 @@
 {
     "name": "Restperformance",
-    "description": "A simple HAPI server based restful service performance testing tool",
+    "description": "Gunjan - Performance tool",
     "version": "1.0.0",
     "author": "Gunjan Kumar",
     "main": "electronApp.js",

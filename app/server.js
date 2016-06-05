@@ -1,3 +1,5 @@
+
+
 var cc = require('config-multipaas'),
   Hapi = require('hapi'),
   path = require('path'),
@@ -5,7 +7,7 @@ var cc = require('config-multipaas'),
 var config = cc()
 var server = Hapi.createServer(config.get('IP'), config.get('PORT'), {
   cors: true,
-  files: { relativeTo: path.resolve('.', './app/public') }
+  files: { relativeTo: path.join(__dirname, 'public') }
 });
 console.log("inside server .js ")
 
