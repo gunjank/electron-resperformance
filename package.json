@@ -1,0 +1,42 @@
+{
+ 
+  "engines": {
+    "node": "^0.10.x",
+    "npm": "^1.2.x"
+  },
+
+  "devDependencies": {
+    "electron-builder": "^4.2.2",
+    "electron-prebuilt": "^1.2.1",
+    "tap": "^0.4.13",
+     "config-multipaas": "0.0.6",
+    "bench-rest": "^1.2.0",
+    "hapi": "^7.5.2"
+  },
+ 
+  "scripts": {
+    
+    "postinstall": "install-app-deps",
+    "start": "npm install && npm run compile && electron ./app",
+    "clean": "rimraf dist",
+     "clean:win": "rimraf dist/win",
+     "compile": "rimraf app/out ",
+   "pack": "npm run compile && build --target dir",
+    "dist": "npm run compile && build",
+    "release": "npm run compile && build",
+    "dist:win64": "./node_modules/.bin/build --platform win32 --arch x64"
+    
+      
+    
+  },
+  "build": {
+    "app-bundle-id": "Restperformance",
+    "app-category-type": "application",
+    "iconUrl":"https://en.wikipedia.org/wiki/Favicon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gunjank/electron-resperformance.git"
+  }
+}
+

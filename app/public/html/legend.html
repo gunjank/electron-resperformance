@@ -1,0 +1,30 @@
+<table >
+    <tr>
+        <td>Total Calls </td>
+        <td>{{resp.stats.main.histogram.count | number:0}}</td>
+    </tr>
+    <tr>
+        <td>Error Count </td>
+        <td>{{resp.errorCount | number:0}}</td>
+    </tr>
+    <tr>
+        <td>Total Time (ms)</td>
+        <td>{{resp.stats.totalElapsed | number:0}}</td>
+    </tr>
+    <tr>
+        <td>Minimum Time (ms) </td>
+        <td>{{resp.stats.main.histogram.min | number:0}}</td>
+    </tr>
+    <tr>
+        <td>Maximum Time (ms)</td>
+        <td>{{resp.stats.main.histogram.max | number:0}}</td>
+    </tr>
+    <tr>
+        <td>Sum (ms) </td>
+        <td>{{resp.stats.main.histogram.sum | number:0}}</td>
+    </tr>
+    <tr>
+        <td>Mean (ms)</td>
+        <td>{{resp.stats.main.histogram.mean | number:0}}</td>
+    </tr>
+</table>
